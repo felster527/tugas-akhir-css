@@ -1,0 +1,134 @@
+
+.wallpaper {
+    background-image: url("wallpaper.jpg");
+    height:900px;
+    width: 100%;
+}
+
+.tengah {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    padding-top: 300px;
+}
+.Image{
+   text-align: center;
+}
+
+
+.contact {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+  }
+   
+  
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+   
+
+  .slide-wrapper {
+     
+
+    width: calc(728px * 4);
+   
+  
+    animation: slide 10s ease infinite;
+  }
+   
+  
+  .slide:nth-child(1) {
+    background: green;
+  }
+   
+  .slide:nth-child(2) {
+    background: pink;
+  }
+  
+  @keyframes slide {
+     
+
+    20% {
+      margin-left: 0px;
+    }
+   
+    40% {
+      margin-left: calc(-728px * 1);
+    }
+  }
+
+
+
+
+
+  .flip-box {
+    background-color: transparent;
+    width: 1400px;
+    height: 500px;
+    perspective: 1000px;
+
+  }
+
+  .flip-box-2 {
+    background-color: transparent;
+    width: 1400px;
+    height: 500px;
+    perspective: 1000px;
+
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 1400px;
+    height: 500px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 1400px;
+    height: 500px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+  
+
